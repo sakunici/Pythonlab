@@ -1,15 +1,5 @@
 import streamlit as st
 
-
-
-def cal_rectangle_area(w,h):
-    return w * h
-
-area = cal_rectangle_area(10,2)
-
-
-print (f"the area is {area}" )
-
 def cal_circle_area(r):
     return 3.14*r*r
 
@@ -25,5 +15,5 @@ radius = st.number_input ("Enter radius")
 submit_btn = st.button ("Submit")
 if submit_btn:
     circle_area = cal_circle_area(radius)
-    st.write(f"the area is {circle_area}" )
+    st.write(f"the area is {circle_area} " )
 
