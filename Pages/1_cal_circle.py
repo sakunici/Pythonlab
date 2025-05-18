@@ -7,7 +7,7 @@ def cal_circle_area(r):
 
 def plot_circle(radius):
     fig, ax = plt.subplots()
-    circle = plt.Circle((0, 0), radius, fill=False)
+    circle = plt.Circle((0, 0), radius, fill=True, color='#00c9a7', alpha=0.3)  # Added color and transparency
     ax.add_patch(circle)
     ax.set_aspect('equal')
     ax.grid(True)
