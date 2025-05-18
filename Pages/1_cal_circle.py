@@ -6,11 +6,14 @@ def cal_circle_area(r):
     return 3.14*r*r
 
 def plot_circle(radius):
+    # Create figure and axis
     fig, ax = plt.subplots()
-    circle = plt.Circle((0, 0), radius, fill=True, color='#00c9a7', alpha=1)  # Added color and transparency
+    # Create circle with specified color and opacity
+    circle = plt.Circle((0, 0), radius, fill=True, color='#00c9a7', alpha=0.3)  
     ax.add_patch(circle)
     ax.set_aspect('equal')
     ax.grid(True)
+    # Set view limits
     ax.set_xlim(-radius*1.5, radius*1.5)
     ax.set_ylim(-radius*1.5, radius*1.5)
     ax.set_title(f'Circle with radius {radius}')

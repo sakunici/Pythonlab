@@ -1,26 +1,19 @@
-import streamlit as st
+import streamlit as st 
 
+st.set_page_config(
+    page_title="Portfolio",
+    page_icon=":guardsman:",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
+if 'name' in st.session_state:
+    st.write(f"Hello {st.session_state.name}")
 
-def cal_rectangle_area(w,h):
-    return w * h
-
-area = cal_rectangle_area(10,2)
-
-print ("the area is " + str(area))
-print (f"the area is {area}" )
-
-def cal_circle_area(r):
-    return 3.14*r*r
-
-circle_area = cal_circle_area(4)
-
-print ("the area is " + str(circle_area))
-print (f"the area is {circle_area}" )
-
-st.title("Shape calculator")
-st.write("This is the calculator app")
-
+name = st.text_input("Enter your name")
+if name:
+    st.session_state.name = name
+    st.rerun()
 
 
 
