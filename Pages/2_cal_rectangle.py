@@ -6,7 +6,7 @@ def cal_rectangle_area(w, h):
 
 def plot_rectangle(width, height):
     fig, ax = plt.subplots()
-    rectangle = plt.Rectangle((0, 0), width, height, fill=True, color='#845ec2', alpha=0.3)
+    rectangle = plt.Rectangle((0, 0), width, height, fill=True, color='#845ec2', alpha=1)
     ax.add_patch(rectangle)
     ax.set_aspect('equal')
     ax.grid(True)
