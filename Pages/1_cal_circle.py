@@ -24,7 +24,7 @@ submit_btn = st.button("Submit")
 
 if submit_btn:
     circle_area = cal_circle_area(radius)
-    st.write(f"The area is {circle_area:.2f} square units")
+    st.write(f"The area is {circle_area:.2f}")
     
     # Display the circle visualization
     fig = plot_circle(radius)
