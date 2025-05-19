@@ -16,13 +16,13 @@ with st.form("chart_params"):
         x_range = st.number_input("Number of points (X-range)", 
                                 min_value=5, 
                                 max_value=50, 
-                                value=20)
+                                value=5)
     
     with col2:
         y_range = st.number_input("Maximum Y value", 
                                 min_value=100, 
                                 max_value=1000, 
-                                value=500)
+                                value=100)
     
     submit_btn = st.form_submit_button("Generate Chart")
 
