@@ -5,8 +5,8 @@ import streamlit as st
 def generate_random_data(x_r, y_r):
     return list(zip(range(x_r), [random.randint(0, y_r) for _ in range(x_r)]))
 
-st.title("D3 Demo Line Chart")
-st.write("This is a demo of D3 line chart")
+st.title("X & Y Chart")
+st.write("Demo Your Chart Here!")
 
 # Add form for user input
 with st.form("chart_params"):

@@ -8,7 +8,7 @@ if 'phone' not in st.session_state:
 if 'profile_pic' not in st.session_state:
     st.session_state.profile_pic = None
 
-st.title("User Profile")
+st.title("My Profile")
 
 # Create two columns for layout
 col1, col2 = st.columns(2)
@@ -39,9 +39,9 @@ with col2:
 st.divider()
 st.subheader("Profile Information")
 if st.session_state.name:
-    st.write(f"👤 Name: {st.session_state.name}")
+    st.write(f" Name: {st.session_state.name}")
 if st.session_state.phone:
-    st.write(f"📞 Phone: {st.session_state.phone}")
+    st.write(f" Phone: {st.session_state.phone}")
 
 # Add clear button
 if st.button("Clear Profile"):
